@@ -346,6 +346,72 @@
     }; // end ssMoveTo
 
 
+   /* Project Showcase — scroll-snap counter & card animations
+    * ------------------------------------------------------ */
+    const ssProjectShowcase = function() {
+
+        const showcase = document.getElementById('projectShowcase');
+        const cards = document.querySelectorAll('.project-card');
+        const counterEl = document.getElementById('counterCurrent');
+        const scrollHint = document.getElementById('projectScrollHint');
+
+        if (!showcase || !cards.length) return;
+
+        // IntersectionObserver for activating each card
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                const card = entry.target;
+
+                if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                    // Remove active from all cards
+                    cards.forEach(function(c) { c.classList.remove('is-active'); });
+
+                    // Activate the current card
+                    card.classList.add('is-active');
+
+                    // Update counter
+                    const idx = card.getAttribute('data-index');
+                    if (counterEl && idx) {
+                        const formatted = String(idx).padStart(2, '0');
+
+                        // Animate out & in
+                        counterEl.style.opacity = '0';
+                        counterEl.style.transform = 'translateY(-8px)';
+                        setTimeout(function() {
+                            counterEl.textContent = formatted;
+                            counterEl.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                            counterEl.style.opacity = '1';
+                            counterEl.style.transform = 'translateY(0)';
+                        }, 150);
+                    }
+
+                    // Hide scroll hint after first card
+                    if (scrollHint) {
+                        if (parseInt(idx) > 1) {
+                            scrollHint.classList.add('is-hidden');
+                        } else {
+                            scrollHint.classList.remove('is-hidden');
+                        }
+                    }
+                }
+            });
+        }, {
+            root: showcase,
+            threshold: 0.5
+        });
+
+        cards.forEach(function(card) {
+            observer.observe(card);
+        });
+
+        // Activate first card immediately
+        if (cards[0]) {
+            cards[0].classList.add('is-active');
+        }
+
+    }; // end ssProjectShowcase
+
+
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
@@ -355,10 +421,64 @@
         ssScrollSpy();
         ssViewAnimate();
         ssSwiper();
-        ssLightbox();
         ssAlertBoxes();
         ssMoveTo();
+        ssProjectShowcase();
+        ssSkillsRotator();
 
     })();
+
+
+       /* Skills Rotator
+        * ------------------------------------------------------ */
+       function ssSkillsRotator() {
+
+        const el = document.getElementById('skillName');
+        if (!el) return;
+
+        const skills = [
+            'Java',
+            'Backend Development',
+            'Elixir',
+            'Java',
+            'MERN'
+        ];
+
+        let idx = 0;
+        const glitchDuration = 900; // ms
+        const hold = 900; // ms before next
+        const fade = 600; // fade durations
+
+        el.textContent = skills[0];
+        el.setAttribute('data-text', skills[0]);
+
+        (async function loop() {
+            // initial delay
+            await new Promise(r => setTimeout(r, 600));
+            while (true) {
+                // glitch in
+                el.classList.add('glitch');
+                await new Promise(r => setTimeout(r, glitchDuration));
+
+                // remove glitch, fade out
+                el.classList.remove('glitch');
+                el.classList.add('fade-out');
+                await new Promise(r => setTimeout(r, fade));
+
+                // next skill
+                idx = (idx + 1) % skills.length;
+                el.classList.remove('fade-out');
+                el.classList.add('fade-in');
+                el.textContent = skills[idx];
+                el.setAttribute('data-text', skills[idx]);
+                await new Promise(r => setTimeout(r, fade));
+                el.classList.remove('fade-in');
+
+                // hold before next glitch
+                await new Promise(r => setTimeout(r, hold));
+            }
+        })();
+
+       }
 
 })(document.documentElement);

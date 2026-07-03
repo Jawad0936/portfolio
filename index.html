@@ -173,6 +173,19 @@
                     </div>
                 </div> <!-- end about-expertise -->
 
+                <div class="row about-skills" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Skills</h2>
+
+                        <div class="skills-rotator" id="skillsRotator" data-animate-el>
+                            <div class="skill-wrapper">
+                                <span class="skill-name" id="skillName" data-text="Java" aria-live="polite">Java</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- end about-skills -->
+
 
                 <div class="row about-timelines" data-animate-block>
 
@@ -275,314 +288,197 @@
                 </div> <!-- end about-timelines -->
 
             </section> <!-- end s-about -->
-
-
             <!-- ### works
             ================================================== -->
             <section id="works" class="s-works target-section">
 
-
-                <div class="row works-portfolio">
-
+                <!-- Works Header -->
+                <div class="works-header row">
                     <div class="column lg-12" data-animate-block>
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Recent Works
-                        </h2>
-                        <p class="h1" data-animate-el>
-                            Here are some of my favorite projects I have done lately. Feel free to check them out.
+                        <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
+                        <p class="h1 works-header__tagline" data-animate-el>
+                            Here are some of my favorite projects I have done lately.
                         </p>
+                    </div>
+                </div>
 
-                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+                <!-- Scroll-snapped project showcase -->
+                <div class="project-showcase" id="projectShowcase">
 
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-01">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/bamboo.jpeg"
-                                            srcset="images/portfolio/bamboo.jpeg 1x, images/portfolio/bamboo.jpeg 2x"
-                                            alt="">
-                                    </div>
+                    <!-- Sticky counter -->
+                    <div class="project-counter" id="projectCounter">
+                        <span class="project-counter__current" id="counterCurrent">01</span>
+                        <span class="project-counter__sep">/</span>
+                        <span class="project-counter__total">06</span>
+                    </div>
 
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Backend
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Bamboo Wallet
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    <!-- Scroll hint arrows -->
+                    <div class="project-scroll-hint" id="projectScrollHint">
+                        <span>Scroll</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <!-- Project 01 — Bamboo Wallet -->
+                    <div class="project-card" data-index="1" id="project-01">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/bamboo.jpeg')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Backend Development</span>
+                            </div>
+                            <h2 class="project-card__title">Bamboo<br>Wallet</h2>
+                            <p class="project-card__desc">
+                                A scalable fintech platform for investment tracking and portfolio management,
+                                featuring secure transactions, real-time performance analytics, and seamless
+                                financial data integration.
+                            </p>
+                            <div class="project-card__actions">
+                                <a href="https://investbamboo.com/" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    View Project
+                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
                                     </svg>
                                 </a>
-                            </li>
+                            </div>
+                        </div>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/bamboo.jpeg" alt="Bamboo Wallet">
+                        </div>
+                    </div>
 
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-02">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/ami.jpeg"
-                                            srcset="images/portfolio/ami.jpeg 1x, images/portfolio/ami.jpeg.jpg 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Backend
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            AMI
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    <!-- Project 02 — AMI -->
+                    <div class="project-card" data-index="2" id="project-02">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/ami.jpeg')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Backend Development</span>
+                            </div>
+                            <h2 class="project-card__title">African<br>Managers (AMI)</h2>
+                            <p class="project-card__desc">
+                                Robust fintech backend powering a financial management system for African
+                                businesses, with complex data structures, scalable APIs, and high-reliability
+                                integrations.
+                            </p>
+                            <div class="project-card__actions">
+                                <a href="https://www.africanmanagers.com/" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    View Project
+                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
                                     </svg>
                                 </a>
-                            </li> <!--end folio-list__item -->
+                            </div>
+                        </div>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/ami.jpeg" alt="AMI">
+                        </div>
+                    </div>
 
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-03">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/Logo JD.png"
-                                            srcset="images/portfolio/Logo JD.png 1x, images/portfolio/Logo JD.png 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Android Application
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Automaniacs
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    <!-- Project 03 — Automaniacs -->
+                    <div class="project-card" data-index="3" id="project-03">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/Logo JD.png')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Android Application</span>
+                            </div>
+                            <h2 class="project-card__title">Auto-<br>maniacs</h2>
+                            <p class="project-card__desc">
+                                A vehicle maintenance & management Android app with QR code digital receipts,
+                                location-based service reminders, and Google Maps integration for smarter
+                                car care on the go.
+                            </p>
+                            <div class="project-card__actions">
+                                <a href="https://medium.com/@jawad.ul.hassan2001/automaniacs-revolutionizing-vehicle-maintenance-and-management-2b389907c51b" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    Read Case Study
+                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
                                     </svg>
                                 </a>
-                            </li> <!--end folio-list__item -->
+                            </div>
+                        </div>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/Logo JD.png" alt="Automaniacs">
+                        </div>
+                    </div>
 
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-04">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/bank.jpg"
-                                            srcset="images/portfolio/bank.jpg 1x, images/portfolio/bank.jpg 2x" alt="">
-                                    </div>
+                    <!-- Project 04 — WSJ Banking -->
+                    <div class="project-card" data-index="4" id="project-04">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/bank.jpg')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Website</span>
+                            </div>
+                            <h2 class="project-card__title">WSJ<br>Banking System</h2>
+                            <p class="project-card__desc">
+                                A secure, full-featured banking web application built with the MERN stack.
+                                Enables seamless account management, transaction processing, and an intuitive
+                                user experience for modern digital banking.
+                            </p>
+                            <div class="project-card__actions">
+                                <span class="project-card__link project-card__link--muted">Private Project</span>
+                            </div>
+                        </div>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/bank.jpg" alt="WSJ Banking System">
+                        </div>
+                    </div>
 
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Website
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            WSJ banking system
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    <!-- Project 05 — Inventory Management -->
+                    <div class="project-card" data-index="5" id="project-05">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/inventory.jpg')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Desktop Application</span>
+                            </div>
+                            <h2 class="project-card__title">Inventory<br>Management</h2>
+                            <p class="project-card__desc">
+                                A hospital inventory management desktop application to optimize tracking and
+                                management of medical supplies, pharmaceuticals, and hospital equipment with
+                                real-time dashboards and reporting.
+                            </p>
+                            <div class="project-card__actions">
+                                <span class="project-card__link project-card__link--muted">Private Project</span>
+                            </div>
+                        </div>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/inventory.jpg" alt="Inventory Management System">
+                        </div>
+                    </div>
+
+                    <!-- Project 06 — Llama Model Training -->
+                    <div class="project-card" data-index="6" id="project-06">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/machine-1.jpg')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Data Science</span>
+                            </div>
+                            <h2 class="project-card__title">Llama<br>Model Training</h2>
+                            <p class="project-card__desc">
+                                Fine-tuned Meta's LLaMA model using LoRA adaptation on custom domain-specific
+                                datasets — covering ethical scraping, data preprocessing, tokenization,
+                                and local model deployment.
+                            </p>
+                            <div class="project-card__actions">
+                                <a href="https://medium.com/@jawad.ul.hassan2001/a-journey-of-hyperparameters-performance-metrics-and-ccb3b71f1b1f" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    Read Case Study
+                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
                                     </svg>
                                 </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-05">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/inventory.jpg"
-                                            srcset="images/portfolio/inventory.jpg 1x, images/portfolio/inventory.jpg 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Desktop Application
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Inventory Management System.
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                            <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-06">
-                                    <div class="folio-list__item-pic">
-                                        <img src="images/portfolio/machine-1.jpg"
-                                            srcset="images/portfolio/machine-1.jpg 1x, images/portfolio/machine-1.jpg 2x"
-                                            alt="">
-                                    </div>
-
-                                    <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
-                                            Data Science
-                                        </div>
-                                        <div class="folio-list__item-title">
-                                            Llama Model Training
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="folio-list__proj-link" href="#" title="project link">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </li> <!--end folio-list__item -->
-
-                        </ul> <!-- end folio-list -->
-
-                    </div> <!-- end column -->
-
-
-                    <!-- Modal Templates Popup
-                    -------------------------------------------- -->
-                    <div id="modal-01" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/bam.png" alt="">
-
-                            <div class="modal-popup__desc">
-                                <h5>Bamboo</h5>
-                                <p> Working on enhancing and scaling a financial portfolio management system by
-                                    integrating features like secure transactions, data tracking, and real-time
-                                    performance analytics.
-                                    Key Features:</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Investment tracking and transaction management</li>
-                                    <li>Real-time performance analysis</li>
-                                </ul>
                             </div>
-
-                            <a href="https://investbamboo.com/" class="modal-popup__details">Project link</a>
                         </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-02" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/AMI-logo.jpg" alt="">
-
-                            <div class="modal-popup__desc">
-                                <h5>AMI</h5>
-                                <p>Contributed to the development of a robust backend for a financial system, focusing
-                                    on handling complex data structures and ensuring system scalability and reliability.
-                                </p>
-                                <ul class="modal-popup__cat">
-                                    <li>Data-driven system to optimize user experience</li>
-                                </ul>
-                            </div>
-
-                            <a href="https://www.africanmanagers.com/" class="modal-popup__details">Project link</a>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/machine-1.jpg" alt="Llama Model Training">
                         </div>
-                    </div> <!-- end modal -->
+                    </div>
 
-                    <div id="modal-03" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/Logo JD.png" alt="">
-
-                            <div class="modal-popup__desc">
-                                <h5> Automaniacs</h5>
-                                <p>Developed an Android app for vehicle maintenance, featuring QR code-based digital
-                                    receipts, reminders, and Google Maps integration</p>
-                                <ul class="modal-popup__cat">
-                                    <li>QR code-based digital receipts</li>
-                                    <li>Location-based reminders </li>
-                                    <li>Google Maps integration for vehicle maintenance management </li>
-                                </ul>
-                            </div>
-
-                            <a href="https://medium.com/@jawad.ul.hassan2001/automaniacs-revolutionizing-vehicle-maintenance-and-management-2b389907c51b"
-                                class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-04" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/banking.jpeg" alt="">
-
-                            <div class="modal-popup__desc">
-                                <h5>WSJ Banking System</h5>
-                                <p>Led the development of a secure and user-friendly banking website using the MERN
-                                    stack, aimed at simplifying banking transactions and account management.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Website</li>
-                                    <li> Seamless account management</li>
-                                    <li>Transaction processing</li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-05" hidden>
-                        <div class="modal-popup">
-
-                            <img src="images/portfolio/gallery/invent.png" alt="">
-
-                            <div class="modal-popup__desc">
-                                <h5>Hospital Inventory Management </h5>
-                                <p>Led the development of a Hospital Inventory Management System to optimize the
-                                    tracking and management of medical supplies and equipment.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Efficient tracking of medical supplies</li>
-                                    <li>Management of pharmaceuticals and hospital equipment</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div> <!-- end modal -->
-
-                    <div id="modal-06" hidden>
-                        <div class="modal-popup">
-                            <img src="images/portfolio/gallery/model.jpeg" alt="">
-
-                            <div class="modal-popup__desc">
-                                <h5>Llama training model</h5>
-                                <p>Trained and fine-tuned a Meta’s LLaMA model for personalized usage by scraping and
-                                    curating domain-specific datasets. The project involved collecting text data,
-                                    preprocessing, tokenization, training using LoRA (Low-Rank Adaptation) techniques,
-                                    and deploying the model locally.</p>
-                                <ul class="modal-popup__cat">
-                                    <li>Built a custom dataset via ethical web scraping</li>
-                                    <li>Performed data cleaning, tokenization, and formatting for LLaMA</li>
-                                </ul>
-                            </div>
-
-                            <a href="https://medium.com/@jawad.ul.hassan2001/a-journey-of-hyperparameters-performance-metrics-and-ccb3b71f1b1f"
-                                class="modal-popup__details">Project link</a>
-                        </div>
-                    </div> <!-- end modal -->
-
-                </div> <!-- end works-portfolio -->
-
-
-                <!--  -->
+                </div> <!-- end project-showcase -->
 
             </section> <!-- end s-works -->
 
