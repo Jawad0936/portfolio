@@ -18,6 +18,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/workshop.css">
 
     <!-- favicons
     ================================================== -->
@@ -322,21 +323,21 @@
 
                     <!-- Project 01 — Bamboo Wallet -->
                     <div class="project-card" data-index="1" id="project-01">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/bamboo.jpeg')"></div>
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/focustrack.png')"></div>
                         <div class="project-card__overlay"></div>
                         <div class="project-card__content">
                             <div class="project-card__meta">
-                                <span class="project-card__cat">Backend Development</span>
+                                <span class="project-card__cat">Elixir / Fullstack</span>
                             </div>
-                            <h2 class="project-card__title">Bamboo<br>Wallet</h2>
+                            <h2 class="project-card__title">Focus<br>Tracker</h2>
                             <p class="project-card__desc">
-                                A scalable fintech platform for investment tracking and portfolio management,
-                                featuring secure transactions, real-time performance analytics, and seamless
-                                financial data integration.
+                                A full-stack activity tracker built with Elixir/Phoenix and React Native. Features an
+                                OTP-supervised GenServer notification scheduler with persistent browser and mobile alerts,
+                                Phoenix LiveView dashboards, Google OAuth, Guardian JWT, PubSub and Channels.
                             </p>
                             <div class="project-card__actions">
-                                <a href="https://investbamboo.com/" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    View Project
+                                <a href="https://medium.com/@jawad.ul.hassan2001/i-built-a-focus-tracker-in-elixir-because-my-brain-wont-let-me-finish-anything-3f27fb601226?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    Read Case Study
                                     <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
                                     </svg>
@@ -344,27 +345,27 @@
                             </div>
                         </div>
                         <div class="project-card__thumbnail">
-                            <img src="images/portfolio/bamboo.jpeg" alt="Bamboo Wallet">
+                            <img src="images/portfolio/focustrack.png" alt="Focus Tracker">
                         </div>
                     </div>
 
                     <!-- Project 02 — AMI -->
                     <div class="project-card" data-index="2" id="project-02">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/ami.jpeg')"></div>
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/ratelimiter.png')"></div>
                         <div class="project-card__overlay"></div>
                         <div class="project-card__content">
                             <div class="project-card__meta">
-                                <span class="project-card__cat">Backend Development</span>
+                                <span class="project-card__cat">Elixir / Infrastructure</span>
                             </div>
-                            <h2 class="project-card__title">African<br>Managers (AMI)</h2>
+                            <h2 class="project-card__title">Rate<br>Limiter Service</h2>
                             <p class="project-card__desc">
-                                Robust fintech backend powering a financial management system for African
-                                businesses, with complex data structures, scalable APIs, and high-reliability
-                                integrations.
+                                A production-grade rate limiting service in pure Elixir implementing token-bucket
+                                and sliding-window algorithms. Uses one GenServer per user and ETS for microsecond reads,
+                                exposed as a plug usable in any Phoenix router.
                             </p>
                             <div class="project-card__actions">
-                                <a href="https://www.africanmanagers.com/" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    View Project
+                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-pinterest-style-rate-limiter-in-elixir-sub-millisecond-rate-limiting-without-redis-f0999a5bd02b?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    Read Case Study
                                     <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
                                     </svg>
@@ -372,26 +373,25 @@
                             </div>
                         </div>
                         <div class="project-card__thumbnail">
-                            <img src="images/portfolio/ami.jpeg" alt="AMI">
+                            <img src="images/portfolio/ratelimiter.png" alt="Rate Limiter Service">
                         </div>
                     </div>
 
-                    <!-- Project 03 — Automaniacs -->
+                    <!-- Project 03 — Notifications Pipeline -->
                     <div class="project-card" data-index="3" id="project-03">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/Logo JD.png')"></div>
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/notificationpipelane.png')"></div>
                         <div class="project-card__overlay"></div>
                         <div class="project-card__content">
                             <div class="project-card__meta">
-                                <span class="project-card__cat">Android Application</span>
+                                <span class="project-card__cat">Elixir / Streaming</span>
                             </div>
-                            <h2 class="project-card__title">Auto-<br>maniacs</h2>
+                            <h2 class="project-card__title">Notifications<br>Fan-out Pipeline</h2>
                             <p class="project-card__desc">
-                                A vehicle maintenance & management Android app with QR code digital receipts,
-                                location-based service reminders, and Google Maps integration for smarter
-                                car care on the go.
+                                A high-throughput notification delivery system using GenStage and Broadway with
+                                priority queues and back-pressure. Includes a LiveView dashboard for throughput and queue depth.
                             </p>
                             <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/automaniacs-revolutionizing-vehicle-maintenance-and-management-2b389907c51b" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                <a href="https://medium.com/@jawad.ul.hassan2001/building-pinterests-notification-architecture-in-elixir-a-fan-out-pipeline-with-genstage-79a8f7fc7f17?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
                                     Read Case Study
                                     <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
@@ -400,72 +400,25 @@
                             </div>
                         </div>
                         <div class="project-card__thumbnail">
-                            <img src="images/portfolio/Logo JD.png" alt="Automaniacs">
+                            <img src="images/portfolio/notificationpipelane.png" alt="Notifications Fan-out Pipeline">
                         </div>
                     </div>
 
-                    <!-- Project 04 — WSJ Banking -->
+                    <!-- Project 04 — Distributed Cache -->
                     <div class="project-card" data-index="4" id="project-04">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/bank.jpg')"></div>
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/distributedcache.png')"></div>
                         <div class="project-card__overlay"></div>
                         <div class="project-card__content">
                             <div class="project-card__meta">
-                                <span class="project-card__cat">Website</span>
+                                <span class="project-card__cat">Elixir / Distributed Systems</span>
                             </div>
-                            <h2 class="project-card__title">WSJ<br>Banking System</h2>
+                            <h2 class="project-card__title">Distributed Key-Value<br>Cache</h2>
                             <p class="project-card__desc">
-                                A secure, full-featured banking web application built with the MERN stack.
-                                Enables seamless account management, transaction processing, and an intuitive
-                                user experience for modern digital banking.
+                                An in-memory distributed cache with TTL, LRU eviction and multi-node distribution using
+                                Horde and libcluster. Local ETS reads keep latency in microseconds while invalidation broadcasts across nodes.
                             </p>
                             <div class="project-card__actions">
-                                <span class="project-card__link project-card__link--muted">Private Project</span>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/bank.jpg" alt="WSJ Banking System">
-                        </div>
-                    </div>
-
-                    <!-- Project 05 — Inventory Management -->
-                    <div class="project-card" data-index="5" id="project-05">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/inventory.jpg')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Desktop Application</span>
-                            </div>
-                            <h2 class="project-card__title">Inventory<br>Management</h2>
-                            <p class="project-card__desc">
-                                A hospital inventory management desktop application to optimize tracking and
-                                management of medical supplies, pharmaceuticals, and hospital equipment with
-                                real-time dashboards and reporting.
-                            </p>
-                            <div class="project-card__actions">
-                                <span class="project-card__link project-card__link--muted">Private Project</span>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/inventory.jpg" alt="Inventory Management System">
-                        </div>
-                    </div>
-
-                    <!-- Project 06 — Llama Model Training -->
-                    <div class="project-card" data-index="6" id="project-06">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/machine-1.jpg')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Data Science</span>
-                            </div>
-                            <h2 class="project-card__title">Llama<br>Model Training</h2>
-                            <p class="project-card__desc">
-                                Fine-tuned Meta's LLaMA model using LoRA adaptation on custom domain-specific
-                                datasets — covering ethical scraping, data preprocessing, tokenization,
-                                and local model deployment.
-                            </p>
-                            <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/a-journey-of-hyperparameters-performance-metrics-and-ccb3b71f1b1f" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-distributed-key-value-cache-in-elixir-with-horde-libcluster-and-phoenix-liveview-7129ae2dacb0?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
                                     Read Case Study
                                     <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
@@ -474,11 +427,80 @@
                             </div>
                         </div>
                         <div class="project-card__thumbnail">
-                            <img src="images/portfolio/machine-1.jpg" alt="Llama Model Training">
+                            <img src="images/portfolio/distributedcache.png" alt="Distributed Key-Value Cache">
+                        </div>
+                    </div>
+
+                    <!-- Project 05 — Circuit Breaker -->
+                    <div class="project-card" data-index="5" id="project-05">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/circuitbreaker.png')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Elixir / Resilience</span>
+                            </div>
+                            <h2 class="project-card__title">Circuit<br>Breaker Library</h2>
+                            <p class="project-card__desc">
+                                A fault-tolerance OTP library providing closed/open/half-open circuit state machines,
+                                DynamicSupervisor-managed workers, Telemetry events and optional fallback handlers for resilient services.
+                            </p>
+                            <div class="project-card__actions">
+                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-circuit-breaker-library-in-elixir-fault-tolerance-for-distributed-systems-b20c997d45e6?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    Read Case Study
+                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/circuitbreaker.png" alt="Circuit Breaker Library">
+                        </div>
+                    </div>
+
+                    <!-- Project 06 — Absinthe GraphQL -->
+                    <div class="project-card" data-index="6" id="project-06">
+                        <div class="project-card__bg" style="background-image: url('images/portfolio/graphqlapi.png')"></div>
+                        <div class="project-card__overlay"></div>
+                        <div class="project-card__content">
+                            <div class="project-card__meta">
+                                <span class="project-card__cat">Elixir / GraphQL</span>
+                            </div>
+                            <h2 class="project-card__title">GraphQL API<br>with Absinthe</h2>
+                            <p class="project-card__desc">
+                                A Pinterest-inspired GraphQL API built with Absinthe: pins, boards, users and
+                                real-time subscriptions. Uses Dataloader batching, cursor pagination, and auth middleware.
+                            </p>
+                            <div class="project-card__actions">
+                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-pinterest-style-graphql-api-in-elixir-dataloader-subscriptions-and-the-n-1-problem-935bc4d8de1b?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                                    Read Case Study
+                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__thumbnail">
+                            <img src="images/portfolio/graphqlapi.png" alt="GraphQL API with Absinthe">
                         </div>
                     </div>
 
                 </div> <!-- end project-showcase -->
+
+                <!-- See All Projects CTA -->
+                <div class="row">
+                    <div class="column lg-12">
+                        <div class="works-cta-wrap" data-animate-block>
+                            <a href="workshop.html" class="works-cta-btn" id="see-all-projects" data-animate-el>
+                                <span>See All Projects</span>
+                                <span class="works-cta-btn__count">8+</span>
+                                <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             </section> <!-- end s-works -->
 

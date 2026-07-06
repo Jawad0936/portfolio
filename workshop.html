@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Jawad — Workshop</title>
+    <meta name="description" content="Jawad's Workshop — All projects, skills, and technologies I've worked with.">
+    <meta name="author" content="Jawad Ul Hassan">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/workshop.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top" class="workshop-page">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Jawad.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Jawad.</a></li>
+                        <li><a href="index.html#intro">Intro</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li class="current"><a href="workshop.html">Workshop</a></li>
+                        <li><a href="index.html#contact">Say Hello</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### workshop hero
+            ================================================== -->
+            <section id="workshop-hero" class="workshop-hero target-section">
+
+                <div class="row workshop-hero__content wide" data-animate-block>
+                    <div class="column lg-8 md-12">
+                        <div class="text-pretitle with-line" data-animate-el>
+                            My Workshop
+                        </div>
+                        <h1 class="workshop-hero__title" data-animate-el>
+                            Where code <br>
+                            meets craft.
+                        </h1>
+                        <p class="workshop-hero__desc" data-animate-el>
+                            An open look into everything I've built — full project archive,
+                            my complete skill set, and every technology I've worked with.
+                        </p>
+                    </div>
+
+                    <div class="column lg-4 md-12">
+                        <div class="workshop-hero__stats" data-animate-el>
+                            <div class="workshop-stat">
+                                <span class="workshop-stat__num">10+</span>
+                                <span class="workshop-stat__label">Projects</span>
+                            </div>
+                            <div class="workshop-stat">
+                                <span class="workshop-stat__num">2+</span>
+                                <span class="workshop-stat__label">Years Exp.</span>
+                            </div>
+                            <div class="workshop-stat">
+                                <span class="workshop-stat__num">15+</span>
+                                <span class="workshop-stat__label">Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workshop-hero__scroll-cue">
+                    <span>Scroll to explore</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+            </section> <!-- end workshop-hero -->
+
+
+            <!-- ### all projects
+            ================================================== -->
+            <section id="all-projects" class="workshop-section">
+
+                <div class="row workshop-section__header" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Full Archive</h2>
+                        <p class="workshop-section__title h1" data-animate-el>All Projects</p>
+                    </div>
+                </div>
+
+                <!-- Filter tabs -->
+                <div class="row">
+                    <div class="column lg-12">
+                        <div class="filter-tabs" id="filterTabs">
+                            <button class="filter-tab is-active" data-filter="all" id="filter-all">All</button>
+                            <button class="filter-tab" data-filter="backend" id="filter-backend">Backend</button>
+                            <button class="filter-tab" data-filter="mobile" id="filter-mobile">Mobile</button>
+                            <button class="filter-tab" data-filter="web" id="filter-web">Web</button>
+                            <button class="filter-tab" data-filter="data" id="filter-data">Data Science</button>
+                            <button class="filter-tab" data-filter="desktop" id="filter-desktop">Desktop</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects grid -->
+                <div class="row">
+                    <div class="column lg-12">
+                        <div class="projects-grid" id="projectsGrid">
+
+                            <!-- Project: Bamboo Wallet -->
+                            <article class="proj-card" data-category="backend" id="proj-bamboo">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/bamboo.jpeg" alt="Bamboo Wallet" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Backend</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">Bamboo Wallet</h3>
+                                    <p class="proj-card__desc">A scalable fintech platform for investment tracking and portfolio management, featuring secure transactions, real-time analytics, and seamless financial data integration.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">Elixir</span>
+                                        <span class="proj-tag">Phoenix</span>
+                                        <span class="proj-tag">PostgreSQL</span>
+                                        <span class="proj-tag">REST API</span>
+                                    </div>
+                                    <a href="https://investbamboo.com/" target="_blank" rel="noopener noreferrer" class="proj-card__link">
+                                        View Project
+                                        <svg width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Project: AMI -->
+                            <article class="proj-card" data-category="backend" id="proj-ami">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/ami.jpeg" alt="African Managers (AMI)" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Backend</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">African Managers (AMI)</h3>
+                                    <p class="proj-card__desc">Robust fintech backend powering a financial management system for African businesses, with complex data structures, scalable APIs, and high-reliability integrations.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">Elixir</span>
+                                        <span class="proj-tag">Phoenix</span>
+                                        <span class="proj-tag">GraphQL</span>
+                                        <span class="proj-tag">AWS</span>
+                                    </div>
+                                    <a href="https://www.africanmanagers.com/" target="_blank" rel="noopener noreferrer" class="proj-card__link">
+                                        View Project
+                                        <svg width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Project: Automaniacs -->
+                            <article class="proj-card" data-category="mobile" id="proj-auto">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/Logo JD.png" alt="Automaniacs" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Mobile</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">Automaniacs</h3>
+                                    <p class="proj-card__desc">A vehicle maintenance & management Android app with QR code digital receipts, location-based service reminders, and Google Maps integration for smarter car care.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">Java</span>
+                                        <span class="proj-tag">Android</span>
+                                        <span class="proj-tag">Firebase</span>
+                                        <span class="proj-tag">Maps API</span>
+                                    </div>
+                                    <a href="https://medium.com/@jawad.ul.hassan2001/automaniacs-revolutionizing-vehicle-maintenance-and-management-2b389907c51b" target="_blank" rel="noopener noreferrer" class="proj-card__link">
+                                        Read Case Study
+                                        <svg width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Project: WSJ Banking -->
+                            <article class="proj-card" data-category="web" id="proj-wsj">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/bank.jpg" alt="WSJ Banking System" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Web</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">WSJ Banking System</h3>
+                                    <p class="proj-card__desc">A secure, full-featured banking web application built with the MERN stack. Enables seamless account management, transaction processing, and intuitive digital banking.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">MongoDB</span>
+                                        <span class="proj-tag">Express.js</span>
+                                        <span class="proj-tag">React</span>
+                                        <span class="proj-tag">Node.js</span>
+                                    </div>
+                                    <span class="proj-card__link proj-card__link--private">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        Private Project
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Project: Inventory Management -->
+                            <article class="proj-card" data-category="desktop" id="proj-inventory">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/inventory.jpg" alt="Inventory Management System" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Desktop</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">Hospital Inventory</h3>
+                                    <p class="proj-card__desc">A hospital inventory management desktop app to optimize tracking of medical supplies, pharmaceuticals, and hospital equipment with real-time dashboards and reporting.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">Java</span>
+                                        <span class="proj-tag">JavaFX</span>
+                                        <span class="proj-tag">MySQL</span>
+                                        <span class="proj-tag">JDBC</span>
+                                    </div>
+                                    <span class="proj-card__link proj-card__link--private">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        Private Project
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Project: Llama Model Training -->
+                            <article class="proj-card" data-category="data" id="proj-llama">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/machine-1.jpg" alt="Llama Model Training" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Data Science</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">Llama Model Training</h3>
+                                    <p class="proj-card__desc">Fine-tuned Meta's LLaMA model using LoRA adaptation on custom domain-specific datasets — covering ethical scraping, data preprocessing, tokenization, and local model deployment.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">Python</span>
+                                        <span class="proj-tag">PyTorch</span>
+                                        <span class="proj-tag">LoRA</span>
+                                        <span class="proj-tag">HuggingFace</span>
+                                    </div>
+                                    <a href="https://medium.com/@jawad.ul.hassan2001/a-journey-of-hyperparameters-performance-metrics-and-ccb3b71f1b1f" target="_blank" rel="noopener noreferrer" class="proj-card__link">
+                                        Read Case Study
+                                        <svg width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <!-- Project: GitInit Startup -->
+                            <article class="proj-card" data-category="mobile" id="proj-gitinit">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/Logo.png" alt="GitInit Startup" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Mobile / Startup</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">GitInit — Tech Startup</h3>
+                                    <p class="proj-card__desc">Co-founded a tech startup to digitize local businesses. Led end-to-end Android app development for retail shops and restaurants — from requirements gathering to Play Store deployment.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">Java</span>
+                                        <span class="proj-tag">Android</span>
+                                        <span class="proj-tag">Firebase</span>
+                                        <span class="proj-tag">UI/UX</span>
+                                    </div>
+                                    <span class="proj-card__link proj-card__link--private">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        Private Project
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Project: DataCamp Certifications -->
+                            <article class="proj-card" data-category="data" id="proj-datacamp">
+                                <div class="proj-card__img-wrap">
+                                    <img src="images/portfolio/machine-1.jpg" alt="Data Science Certifications" class="proj-card__img">
+                                    <div class="proj-card__img-overlay"></div>
+                                    <span class="proj-card__cat-badge">Data Science</span>
+                                </div>
+                                <div class="proj-card__body">
+                                    <h3 class="proj-card__title">Data Science Projects</h3>
+                                    <p class="proj-card__desc">DataCamp certifications and projects in Data Science, Python, and Machine Learning. Practical work through interactive datasets covering analysis, visualization, and predictive modeling.</p>
+                                    <div class="proj-card__tags">
+                                        <span class="proj-tag">Python</span>
+                                        <span class="proj-tag">Pandas</span>
+                                        <span class="proj-tag">Scikit-learn</span>
+                                        <span class="proj-tag">Matplotlib</span>
+                                    </div>
+                                    <a href="https://medium.com/@jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="proj-card__link">
+                                        View Articles
+                                        <svg width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </div>
+                            </article>
+
+                        </div> <!-- end projects-grid -->
+                    </div>
+                </div>
+
+            </section> <!-- end all-projects -->
+
+
+            <!-- ### skills deep dive
+            ================================================== -->
+            <section id="skills-deep" class="workshop-section workshop-section--dark">
+
+                <div class="row workshop-section__header" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Capabilities</h2>
+                        <p class="workshop-section__title h1" data-animate-el>Skills &amp; Expertise</p>
+                    </div>
+                </div>
+
+                <div class="row skills-grid" data-animate-block>
+
+                    <div class="column lg-4 md-6 tab-12" data-animate-el>
+                        <div class="skill-domain" id="skill-backend">
+                            <div class="skill-domain__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="20" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                    <rect x="2" y="14" width="20" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="6" cy="6.5" r="1" fill="currentColor"/>
+                                    <circle cx="6" cy="17.5" r="1" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-domain__title">Backend Development</h3>
+                            <p class="skill-domain__desc">Building scalable server-side systems, APIs, and microservices for production fintech applications.</p>
+                            <ul class="skill-domain__list">
+                                <li>Elixir &amp; Phoenix Framework</li>
+                                <li>Java / Spring Boot</li>
+                                <li>Node.js &amp; Express</li>
+                                <li>RESTful APIs &amp; GraphQL</li>
+                                <li>Real-time &amp; WebSockets</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column lg-4 md-6 tab-12" data-animate-el>
+                        <div class="skill-domain" id="skill-mobile">
+                            <div class="skill-domain__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="12" cy="18" r="1" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-domain__title">Mobile Development</h3>
+                            <p class="skill-domain__desc">End-to-end Android application development with focus on performance, clean architecture, and UX.</p>
+                            <ul class="skill-domain__list">
+                                <li>Android (Java &amp; Kotlin)</li>
+                                <li>Firebase (Auth, Firestore, FCM)</li>
+                                <li>Google Maps &amp; Location APIs</li>
+                                <li>MVVM &amp; Clean Architecture</li>
+                                <li>Play Store Deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column lg-4 md-6 tab-12" data-animate-el>
+                        <div class="skill-domain" id="skill-fullstack">
+                            <div class="skill-domain__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-domain__title">Full-Stack Web</h3>
+                            <p class="skill-domain__desc">Complete web application development from database schema to pixel-perfect frontend interfaces.</p>
+                            <ul class="skill-domain__list">
+                                <li>React.js &amp; Next.js</li>
+                                <li>MongoDB &amp; PostgreSQL</li>
+                                <li>Express.js</li>
+                                <li>HTML5, CSS3 &amp; JavaScript</li>
+                                <li>Auth &amp; Session flows</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column lg-4 md-6 tab-12" data-animate-el>
+                        <div class="skill-domain" id="skill-data">
+                            <div class="skill-domain__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 3v18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M7 16l4-4 4 4 4-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-domain__title">Data Science &amp; AI</h3>
+                            <p class="skill-domain__desc">Machine learning model training, data analysis, and LLM fine-tuning with a focus on NLP and production deployment.</p>
+                            <ul class="skill-domain__list">
+                                <li>Python (Pandas, NumPy)</li>
+                                <li>PyTorch &amp; Scikit-learn</li>
+                                <li>LLM Fine-tuning (LoRA)</li>
+                                <li>HuggingFace Transformers</li>
+                                <li>Data visualization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column lg-4 md-6 tab-12" data-animate-el>
+                        <div class="skill-domain" id="skill-db">
+                            <div class="skill-domain__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M3 5v4c0 1.657 4.03 3 9 3s9-1.343 9-3V5" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M3 9v4c0 1.657 4.03 3 9 3s9-1.343 9-3V9" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M3 13v4c0 1.657 4.03 3 9 3s9-1.343 9-3v-4" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-domain__title">Databases</h3>
+                            <p class="skill-domain__desc">Schema design, query optimization, and management of relational and non-relational databases at scale.</p>
+                            <ul class="skill-domain__list">
+                                <li>PostgreSQL &amp; MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Firebase Firestore</li>
+                                <li>Migrations &amp; ORM</li>
+                                <li>Query optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="column lg-4 md-6 tab-12" data-animate-el>
+                        <div class="skill-domain" id="skill-devops">
+                            <div class="skill-domain__icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-domain__title">DevOps &amp; Tools</h3>
+                            <p class="skill-domain__desc">Version control, cloud infrastructure, CI/CD pipelines, and deployment automation for reliable releases.</p>
+                            <ul class="skill-domain__list">
+                                <li>Git &amp; GitHub</li>
+                                <li>Docker &amp; containerization</li>
+                                <li>AWS (EC2, S3, Lambda)</li>
+                                <li>Linux &amp; CLI</li>
+                                <li>CI/CD pipelines</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div> <!-- end skills-grid -->
+
+            </section> <!-- end skills-deep -->
+
+
+            <!-- ### tech stack / things worked with
+            ================================================== -->
+            <section id="tech-stack" class="workshop-section">
+
+                <div class="row workshop-section__header" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Tech Stack</h2>
+                        <p class="workshop-section__title h1" data-animate-el>Things I've Worked With</p>
+                    </div>
+                </div>
+
+                <div class="row" data-animate-block>
+                    <div class="column lg-12" data-animate-el>
+                        <div class="tech-marquee-wrap">
+
+                            <!-- Row 1 — scrolls left -->
+                            <div class="tech-marquee tech-marquee--left">
+                                <div class="tech-marquee__track">
+                                    <span class="tech-pill">Elixir</span>
+                                    <span class="tech-pill">Phoenix</span>
+                                    <span class="tech-pill">Java</span>
+                                    <span class="tech-pill">Kotlin</span>
+                                    <span class="tech-pill">Python</span>
+                                    <span class="tech-pill">JavaScript</span>
+                                    <span class="tech-pill">TypeScript</span>
+                                    <span class="tech-pill">Node.js</span>
+                                    <span class="tech-pill">React.js</span>
+                                    <span class="tech-pill">Next.js</span>
+                                    <span class="tech-pill">Spring Boot</span>
+                                    <span class="tech-pill">Express.js</span>
+                                    <!-- duplicate for seamless loop -->
+                                    <span class="tech-pill" aria-hidden="true">Elixir</span>
+                                    <span class="tech-pill" aria-hidden="true">Phoenix</span>
+                                    <span class="tech-pill" aria-hidden="true">Java</span>
+                                    <span class="tech-pill" aria-hidden="true">Kotlin</span>
+                                    <span class="tech-pill" aria-hidden="true">Python</span>
+                                    <span class="tech-pill" aria-hidden="true">JavaScript</span>
+                                    <span class="tech-pill" aria-hidden="true">TypeScript</span>
+                                    <span class="tech-pill" aria-hidden="true">Node.js</span>
+                                    <span class="tech-pill" aria-hidden="true">React.js</span>
+                                    <span class="tech-pill" aria-hidden="true">Next.js</span>
+                                    <span class="tech-pill" aria-hidden="true">Spring Boot</span>
+                                    <span class="tech-pill" aria-hidden="true">Express.js</span>
+                                </div>
+                            </div>
+
+                            <!-- Row 2 — scrolls right -->
+                            <div class="tech-marquee tech-marquee--right">
+                                <div class="tech-marquee__track">
+                                    <span class="tech-pill tech-pill--alt">PostgreSQL</span>
+                                    <span class="tech-pill tech-pill--alt">MySQL</span>
+                                    <span class="tech-pill tech-pill--alt">MongoDB</span>
+                                    <span class="tech-pill tech-pill--alt">Firebase</span>
+                                    <span class="tech-pill tech-pill--alt">AWS</span>
+                                    <span class="tech-pill tech-pill--alt">Docker</span>
+                                    <span class="tech-pill tech-pill--alt">Git</span>
+                                    <span class="tech-pill tech-pill--alt">GraphQL</span>
+                                    <span class="tech-pill tech-pill--alt">REST API</span>
+                                    <span class="tech-pill tech-pill--alt">Android SDK</span>
+                                    <span class="tech-pill tech-pill--alt">PyTorch</span>
+                                    <span class="tech-pill tech-pill--alt">HuggingFace</span>
+                                    <!-- duplicate -->
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">PostgreSQL</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">MySQL</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">MongoDB</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">Firebase</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">AWS</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">Docker</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">Git</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">GraphQL</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">REST API</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">Android SDK</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">PyTorch</span>
+                                    <span class="tech-pill tech-pill--alt" aria-hidden="true">HuggingFace</span>
+                                </div>
+                            </div>
+
+                            <!-- Row 3 — scrolls left -->
+                            <div class="tech-marquee tech-marquee--left">
+                                <div class="tech-marquee__track">
+                                    <span class="tech-pill">Linux</span>
+                                    <span class="tech-pill">Pandas</span>
+                                    <span class="tech-pill">NumPy</span>
+                                    <span class="tech-pill">Scikit-learn</span>
+                                    <span class="tech-pill">Matplotlib</span>
+                                    <span class="tech-pill">JavaFX</span>
+                                    <span class="tech-pill">JDBC</span>
+                                    <span class="tech-pill">Postman</span>
+                                    <span class="tech-pill">VS Code</span>
+                                    <span class="tech-pill">IntelliJ</span>
+                                    <span class="tech-pill">Android Studio</span>
+                                    <span class="tech-pill">Figma</span>
+                                    <!-- duplicate -->
+                                    <span class="tech-pill" aria-hidden="true">Linux</span>
+                                    <span class="tech-pill" aria-hidden="true">Pandas</span>
+                                    <span class="tech-pill" aria-hidden="true">NumPy</span>
+                                    <span class="tech-pill" aria-hidden="true">Scikit-learn</span>
+                                    <span class="tech-pill" aria-hidden="true">Matplotlib</span>
+                                    <span class="tech-pill" aria-hidden="true">JavaFX</span>
+                                    <span class="tech-pill" aria-hidden="true">JDBC</span>
+                                    <span class="tech-pill" aria-hidden="true">Postman</span>
+                                    <span class="tech-pill" aria-hidden="true">VS Code</span>
+                                    <span class="tech-pill" aria-hidden="true">IntelliJ</span>
+                                    <span class="tech-pill" aria-hidden="true">Android Studio</span>
+                                    <span class="tech-pill" aria-hidden="true">Figma</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section> <!-- end tech-stack -->
+
+            <!-- ### stack chart
+            ================================================== -->
+            <section id="stack-chart" class="workshop-section">
+
+                <div class="row workshop-section__header" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Stack Breakdown</h2>
+                        <p class="workshop-section__title h1" data-animate-el>Technologies I Use Most</p>
+                    </div>
+                </div>
+
+                <div class="row" data-animate-block>
+                    <div class="column lg-6 md-12" data-animate-el>
+                        <div class="stack-chart-wrap">
+                            <canvas id="stackChart" width="400" height="400" aria-label="Pie chart showing technology usage" role="img"></canvas>
+                        </div>
+                    </div>
+                    <div class="column lg-6 md-12" data-animate-el>
+                        <p class="workshop-section__desc">This chart visualises the relative amount of work I've done across my main technology stacks. Values are editable in <code>js/workshop.js</code> under the <code>stackData</code> variable.</p>
+                    </div>
+                </div>
+
+            </section> <!-- end stack-chart -->
+
+
+            <!-- ### contact CTA
+            ================================================== -->
+            <section id="workshop-contact" class="workshop-section workshop-section--cta">
+                <div class="row" data-animate-block>
+                    <div class="column lg-12">
+                        <div class="workshop-cta" data-animate-el>
+                            <h2 class="workshop-cta__title">Have a project in mind?</h2>
+                            <p class="workshop-cta__desc">I'm always open to new opportunities, collaborations, and interesting problems to solve.</p>
+                            <div class="workshop-cta__actions">
+                                <a href="index.html#contact" class="btn btn--stroke workshop-cta__btn" id="workshop-say-hello">Say Hello</a>
+                                <a href="index.html" class="workshop-cta__back" id="workshop-back-link">
+                                    <svg width="16" height="16" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.85355 3.14645C6.65829 2.95118 6.34171 2.95118 6.14645 3.14645L2.14645 7.14645C1.95118 7.34171 1.95118 7.65829 2.14645 7.85355L6.14645 11.8536C6.34171 12.0488 6.65829 12.0488 6.85355 11.8536C7.04882 11.6583 7.04882 11.3417 6.85355 11.1464L3.70711 8H12.5C12.7761 8 13 7.77614 13 7.5C13 7.22386 12.7761 7 12.5 7H3.70711L6.85355 3.85355C7.04882 3.65829 7.04882 3.34171 6.85355 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                    Back to Portfolio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main> <!-- end s-content -->
+
+
+        <!-- ## footer
+        ================================================== -->
+        <footer class="s-footer">
+
+            <div class="row">
+                <div class="column ss-copyright">
+                    <span>&copy; Jawad Ul Hassan 2025</span>
+                    <span>Workshop — Full Project Archive</span>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top" id="workshop-go-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
+                            clip-rule="evenodd">
+                            <path
+                                d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="js/workshop.js"></script>
+
+</body>
+
+</html>
