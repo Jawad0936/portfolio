@@ -1,590 +1,819 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js ss-preload" lang="en">
-
-<head>
-
+  <head>
     <!--- basic page needs
     ================================================== -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Jawad</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <!-- mobile specific metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/workshop.css">
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/workshop.css" />
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
 
-</head>
-
-<body id="top">
-
-
+  <body id="top">
     <!-- # preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader">
-        </div>
+      <div id="loader"></div>
     </div>
-
 
     <!-- # page wrap
     ================================================== -->
     <div class="s-pagewrap">
+      <div class="circles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-        <div class="circles">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+      <!-- ## site header 
+        ================================================== -->
+      <header class="s-header">
+        <div class="header-mobile">
+          <span class="mobile-home-link"><a href="index.html">Jawad.</a></span>
+          <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
         </div>
 
+        <div class="row wide main-nav-wrap">
+          <nav class="column lg-12 main-nav">
+            <ul>
+              <li><a href="index.html" class="home-link">Jawad.</a></li>
+              <li class="current">
+                <a href="#intro" class="smoothscroll">Intro</a>
+              </li>
+              <li><a href="#about" class="smoothscroll">About</a></li>
+              <li><a href="#works" class="smoothscroll">Works</a></li>
+              <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- end s-header -->
 
-        <!-- ## site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Jawad.</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
-            </div>
-
-            <div class="row wide main-nav-wrap">
-                <nav class="column lg-12 main-nav">
-                    <ul>
-                        <li><a href="index.html" class="home-link">Jawad.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
-                        <li><a href="#about" class="smoothscroll">About</a></li>
-                        <li><a href="#works" class="smoothscroll">Works</a></li>
-                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header> <!-- end s-header -->
-
-
-        <!-- ## main content
+      <!-- ## main content
         ==================================================- -->
-        <main class="s-content">
-
-
-            <!-- ### intro
+      <main class="s-content">
+        <!-- ### intro
             ================================================== -->
-            <section id="intro" class="s-intro target-section">
-
-                <div class="row intro-content wide">
-
-                    <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello World
-                        </div>
-
-                        <h1 class="text-huge-title">
-                            I am Jawad, <br>
-                            a Software Engineer <br>
-                            & backend developer <br>
-                            crafting powerful digital <br>
-                            solutions from Pakistan.
-                        </h1>
-                    </div>
-
-                    <ul class="intro-social">
-                        <li><a href="https://medium.com/@jawad.ul.hassan2001">Medium</a></li>
-                        <li><a href="https://www.freelancer.com/u/jawadulhassann?sb=t">Freelancer</a></li>
-                        <li><a href="https://github.com/Jawad0936/">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/jawad-ul-hassan-61407423b">Linkedin</a></li>
-                        <li><a href="https://www.upwork.com/freelancers/~018d5eeb796c2535c9?mp_source=share">Upwork</a></li>
-                    </ul>
-
-                </div> <!-- end intro content -->
-
-                <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                        fill-rule="evenodd" clip-rule="evenodd">
-                        <path
-                            d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-                    </svg>
-                </a>
-
-            </section> <!-- end s-intro -->
-
-
-            <!-- ### about
-            ================================================== -->
-            <section id="about" class="s-about target-section">
-
-
-                <div class="row about-info wide" data-animate-block>
-
-                    <div class="column lg-6 md-12 about-info__pic-block">
-                        <img src="images/my_pic.png" srcset="images/my_pic.png 1x, images/my_pic.png 2x" alt=""
-                            class="about-info__pic" data-animate-el>
-                    </div>
-
-                    <div class="column lg-6 md-12">
-                        <div class="about-info__text">
-
-                            <h2 class="text-pretitle with-line" data-animate-el>
-                                About
-                            </h2>
-                            <p class="attention-getter" data-animate-el>
-                                Passionate Software Engineer with a strong foundation in backend development,
-                                driven by curiosity, creativity, and a mission to build impactful digital solutions.
-                                Always eager to learn, grow, and contribute meaningfully to innovative projects.
-                                Skilled in modern technologies like Elixir, Java, and the MERN stack,
-                                with hands-on experience in real-world applications across fintech and mobile
-                                development.
-                            </p>
-                            <a href="https://drive.google.com/file/d/1wsM0rpZ63JeV47mkWj8eA4LQqiylKoUf/view?usp=drive_link"
-                                class="btn btn--medium u-fullwidth" data-animate-el>Download CV</a>
-
-                        </div>
-                    </div>
-                </div> <!-- about-info -->
-
-
-                <div class="row about-expertise" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
-
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Backend development</li>
-                            <li>mobile apps</li>
-                            <li>Elixir</li>
-                            <li>Java</li>
-                            <li>MERN</li>
-                            <li>Database</li>
-                            <li>Visualisation</li>
-                        </ul>
-
-                    </div>
-                </div> <!-- end about-expertise -->
-
-                <div class="row about-skills" data-animate-block>
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle" data-animate-el>Skills</h2>
-
-                        <div class="skills-rotator" id="skillsRotator" data-animate-el>
-                            <div class="skill-wrapper">
-                                <span class="skill-name" id="skillName" data-text="Java" aria-live="polite">Java</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> <!-- end about-skills -->
-
-
-                <div class="row about-timelines" data-animate-block>
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Experience
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Regbits</h3>
-                                        <h5 class="timeline__meta">Associate Software Engineer</h5>
-                                        <p class="timeline__timeframe">December 2024 - Present</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>At RegBits, I work as an Associate Software Engineer (Backend), contributing to
-                                        scalable fintech solutions.
-                                        I’ve played a key role in developing and maintaining backend systems for
-                                        projects like Bamboo Wallet and AMI.
-                                        My responsibilities include API development, database optimization, and ensuring
-                                        seamless system integration.
-                                        I actively collaborate with cross-functional teams to deliver high-quality,
-                                        reliable software</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">GitInit</h4>
-                                    <h5 class="timeline__meta">Android developer</h5>
-                                    <p class="timeline__timeframe">Jan 2023 - Jan 2024</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>At GitInit, I served as Co-founder and Android Developer, where I collaborated
-                                        with a fellow university student to launch a tech startup aimed at digitizing
-                                        local businesses. I led the end-to-end development of custom Android apps for
-                                        clients like retail shops and restaurants. My role involved full project
-                                        lifecycle management, from gathering requirements to deployment and support,
-                                        while ensuring strong client relations and delivering innovative, high-quality
-                                        solutions.</p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Education
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">FAST-NUCES</h3>
-                                        <h5 class="timeline__meta">Bacheolers in Software Engineering</h5>
-                                        <p class="timeline__timeframe">April 2024</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>I pursued my Bachelor's in Software Engineering at FAST National University,
-                                        Faisalabad, one of Pakistan’s top institutions for computer science and
-                                        engineering. During my time there, I built a strong foundation in programming,
-                                        databases, and software development methodologies. I actively participated in
-                                        academic projects, tech societies, and internships that enriched my practical
-                                        experience. The university environment fostered my passion for problem-solving
-                                        and innovation.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">DataCamp</h4>
-                                    <h5 class="timeline__meta">Professional Certifications</h5>
-                                    <p class="timeline__timeframe">August 2024</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Completed certifications in Data Science, Python Programming, and Backend
-                                        Development. Gained practical skills through interactive projects and real-world
-                                        datasets, enhancing proficiency in data analysis, machine learning, and modern
-                                        development practices.</p>
-                                </div>
-                            </div>
-
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-
-                </div> <!-- end about-timelines -->
-
-            </section> <!-- end s-about -->
-            <!-- ### works
-            ================================================== -->
-            <section id="works" class="s-works target-section">
-
-                <!-- Works Header -->
-                <div class="works-header row">
-                    <div class="column lg-12" data-animate-block>
-                        <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
-                        <p class="h1 works-header__tagline" data-animate-el>
-                            Here are some of my favorite projects I have done lately.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Scroll-snapped project showcase -->
-                <div class="project-showcase" id="projectShowcase">
-
-                    <!-- Sticky counter -->
-                    <div class="project-counter" id="projectCounter">
-                        <span class="project-counter__current" id="counterCurrent">01</span>
-                        <span class="project-counter__sep">/</span>
-                        <span class="project-counter__total">06</span>
-                    </div>
-
-                    <!-- Scroll hint arrows -->
-                    <div class="project-scroll-hint" id="projectScrollHint">
-                        <span>Scroll</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-
-                    <!-- Project 01 — Bamboo Wallet -->
-                    <div class="project-card" data-index="1" id="project-01">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/focustrack.png')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Elixir / Fullstack</span>
-                            </div>
-                            <h2 class="project-card__title">Focus<br>Tracker</h2>
-                            <p class="project-card__desc">
-                                A full-stack activity tracker built with Elixir/Phoenix and React Native. Features an
-                                OTP-supervised GenServer notification scheduler with persistent browser and mobile alerts,
-                                Phoenix LiveView dashboards, Google OAuth, Guardian JWT, PubSub and Channels.
-                            </p>
-                            <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/i-built-a-focus-tracker-in-elixir-because-my-brain-wont-let-me-finish-anything-3f27fb601226?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    Read Case Study
-                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/gallery/focustrack.png" alt="Focus Tracker">
-                        </div>
-                    </div>
-
-                    <!-- Project 02 — AMI -->
-                    <div class="project-card" data-index="2" id="project-02">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/ratelimiter.png')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Elixir / Infrastructure</span>
-                            </div>
-                            <h2 class="project-card__title">Rate<br>Limiter Service</h2>
-                            <p class="project-card__desc">
-                                A production-grade rate limiting service in pure Elixir implementing token-bucket
-                                and sliding-window algorithms. Uses one GenServer per user and ETS for microsecond reads,
-                                exposed as a plug usable in any Phoenix router.
-                            </p>
-                            <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-pinterest-style-rate-limiter-in-elixir-sub-millisecond-rate-limiting-without-redis-f0999a5bd02b?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    Read Case Study
-                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/gallery/ratelimiter.png" alt="Rate Limiter Service">
-                        </div>
-                    </div>
-
-                    <!-- Project 03 — Notifications Pipeline -->
-                    <div class="project-card" data-index="3" id="project-03">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/notificationpipelane.png')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Elixir / Streaming</span>
-                            </div>
-                            <h2 class="project-card__title">Notifications<br>Fan-out Pipeline</h2>
-                            <p class="project-card__desc">
-                                A high-throughput notification delivery system using GenStage and Broadway with
-                                priority queues and back-pressure. Includes a LiveView dashboard for throughput and queue depth.
-                            </p>
-                            <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/building-pinterests-notification-architecture-in-elixir-a-fan-out-pipeline-with-genstage-79a8f7fc7f17?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    Read Case Study
-                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/gallery/notifypipeline.png" alt="Notifications Fan-out Pipeline">
-                        </div>
-                    </div>
-
-                    <!-- Project 04 — Distributed Cache -->
-                    <div class="project-card" data-index="4" id="project-04">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/distributedcache.png')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Elixir / Distributed Systems</span>
-                            </div>
-                            <h2 class="project-card__title">Distributed Key-Value<br>Cache</h2>
-                            <p class="project-card__desc">
-                                An in-memory distributed cache with TTL, LRU eviction and multi-node distribution using
-                                Horde and libcluster. Local ETS reads keep latency in microseconds while invalidation broadcasts across nodes.
-                            </p>
-                            <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-distributed-key-value-cache-in-elixir-with-horde-libcluster-and-phoenix-liveview-7129ae2dacb0?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    Read Case Study
-                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/gallery/distributedcache.png" alt="Distributed Key-Value Cache">
-                        </div>
-                    </div>
-
-                    <!-- Project 05 — Circuit Breaker -->
-                    <div class="project-card" data-index="5" id="project-05">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/circuitbreaker.png')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Elixir / Resilience</span>
-                            </div>
-                            <h2 class="project-card__title">Circuit<br>Breaker Library</h2>
-                            <p class="project-card__desc">
-                                A fault-tolerance OTP library providing closed/open/half-open circuit state machines,
-                                DynamicSupervisor-managed workers, Telemetry events and optional fallback handlers for resilient services.
-                            </p>
-                            <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-circuit-breaker-library-in-elixir-fault-tolerance-for-distributed-systems-b20c997d45e6?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    Read Case Study
-                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/gallery/circuitbreaker.png" alt="Circuit Breaker Library">
-                        </div>
-                    </div>
-
-                    <!-- Project 06 — Absinthe GraphQL -->
-                    <div class="project-card" data-index="6" id="project-06">
-                        <div class="project-card__bg" style="background-image: url('images/portfolio/graphqlapi.png')"></div>
-                        <div class="project-card__overlay"></div>
-                        <div class="project-card__content">
-                            <div class="project-card__meta">
-                                <span class="project-card__cat">Elixir / GraphQL</span>
-                            </div>
-                            <h2 class="project-card__title">GraphQL API<br>with Absinthe</h2>
-                            <p class="project-card__desc">
-                                A Pinterest-inspired GraphQL API built with Absinthe: pins, boards, users and
-                                real-time subscriptions. Uses Dataloader batching, cursor pagination, and auth middleware.
-                            </p>
-                            <div class="project-card__actions">
-                                <a href="https://medium.com/@jawad.ul.hassan2001/building-a-pinterest-style-graphql-api-in-elixir-dataloader-subscriptions-and-the-n-1-problem-935bc4d8de1b?sharedUserId=jawad.ul.hassan2001" target="_blank" rel="noopener noreferrer" class="project-card__link">
-                                    Read Case Study
-                                    <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-card__thumbnail">
-                            <img src="images/portfolio/gallery/graphqlapi.png" alt="GraphQL API with Absinthe">
-                        </div>
-                    </div>
-
-                </div> <!-- end project-showcase -->
-
-                <!-- See All Projects CTA -->
-                <div class="row">
-                    <div class="column lg-12">
-                        <div class="works-cta-wrap" data-animate-block>
-                            <a href="workshop.html" class="works-cta-btn" id="see-all-projects" data-animate-el>
-                                <span>See All Projects</span>
-                                <span class="works-cta-btn__count">20+</span>
-                                <svg width="14" height="14" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </section> <!-- end s-works -->
-
-
-            <!-- ### contact
-            ================================================== -->
-            <section id="contact" class="s-contact target-section">
-
-                <div class="row contact-top">
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle">
-                            Get In Touch
-                        </h2>
-
-                        <p class="h1">
-                            I love to hear from you.
-                            Whether you have a question or just
-                            want to chat about design, tech & art — shoot me a message.
-                        </p>
-                    </div>
-                </div> <!-- end contact-top -->
-
-                <div class="row contact-bottom">
-                    <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Reach me at</h3>
-                        <p class="contact-links">
-                            <a href="mailto:jawadulhassan2001@gmail.com" class="mailtoui">Mail me</a> <br>
-                            <a href="tel:+923270508243">text me </a>
-                        </p>
-                    </div>
-                    <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Social</h3>
-                        <ul class="contact-social">
-                            <li><a href="https://medium.com/@jawad.ul.hassan2001">Medium</a></li>
-                            <li><a href="https://www.freelancer.com/u/jawadulhassann?sb=t">Freelancer</a></li>
-                            <li><a href="https://github.com/Jawad0936/">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/jawad-ul-hassan-61407423b">Linkedin</a></li>
-                            <li><a href="https://www.upwork.com/freelancers/~018d5eeb796c2535c9?mp_source=share">Upwork</a></li>
-                        </ul>
-                    </div>
-                    <div class="column lg-4 md-12 contact-block">
-                        <a href="mailto:jawad.ul.hassan2001@gmail.com"
-                            class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
-                    </div>
-                </div> <!-- end contact-bottom -->
-
-            </section> <!-- end contact -->
-
-        </main> <!-- end s-content -->
-
-
-        <!-- ## footer
-        ================================================== -->
-        <footer class="s-footer">
-
-            <div class="row">
-                <div class="column ss-copyright">
-                    <span>© Copyright Luther 2021</span>
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a
-                            href="https://themewagon.com">Themewagon</a></span>
-                </div>
-
-                <div class="ss-go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd"
-                            clip-rule="evenodd">
-                            <path
-                                d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
-                        </svg>
-                    </a>
-                </div>
+        <section id="intro" class="s-intro target-section">
+          <div class="row intro-content wide">
+            <div class="column">
+              <div class="text-pretitle with-line">Hello World</div>
+
+              <h1 class="text-huge-title">
+                a Backend Engineer <br />
+                building distributed systems <br />
+                in Elixir & OTP — <br />
+                open to opportunities.
+              </h1>
             </div>
 
-        </footer> <!-- end s-footer -->
+            <ul class="intro-social">
+              <li>
+                <a href="https://medium.com/@jawad.ul.hassan2001">Medium</a>
+              </li>
+              <li>
+                <a href="https://www.freelancer.com/u/jawadulhassann?sb=t"
+                  >Freelancer</a
+                >
+              </li>
+              <li><a href="https://github.com/Jawad0936/">Github</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/jawad-ul-hassan-61407423b"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.upwork.com/freelancers/~018d5eeb796c2535c9?mp_source=share"
+                  >Upwork</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- end intro content -->
 
-    </div> <!-- end -s-pagewrap -->
+          <a href="#about" class="intro-scrolldown smoothscroll">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
+              />
+            </svg>
+          </a>
+        </section>
+        <!-- end s-intro -->
 
+        <!-- ### about
+            ================================================== -->
+        <section id="about" class="s-about target-section">
+          <div class="row about-info wide" data-animate-block>
+            <div class="column lg-6 md-12 about-info__pic-block">
+              <img
+                src="images/my_pic.png"
+                srcset="images/my_pic.png 1x, images/my_pic.png 2x"
+                alt=""
+                class="about-info__pic"
+                data-animate-el
+              />
+            </div>
+
+            <div class="column lg-6 md-12">
+              <div class="about-info__text">
+                <h2 class="text-pretitle with-line" data-animate-el>About</h2>
+                <p class="attention-getter" data-animate-el>
+                  I'm a Software Engineer from Pakistan with a strong
+                  focus on backend systems and distributed architecture. I
+                  graduated from FAST-NUCES and currently work as a Software
+                  Engineer at Kagebytes, a fintech company. Outside of work I
+                  build in Elixir — covering rate limiting, event pipelines,
+                  distributed caching, circuit breakers, and GraphQL APIs —
+                  patterns used by companies running Elixir in production like
+                  Pinterest, Discord, and Brex. Actively seeking backend
+                  engineering roles.
+                </p>
+                <a
+                  href="https://drive.google.com/file/d/1wsM0rpZ63JeV47mkWj8eA4LQqiylKoUf/view?usp=drive_link"
+                  class="btn btn--medium u-fullwidth"
+                  data-animate-el
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- about-info -->
+
+          <div class="row about-expertise" data-animate-block>
+            <div class="column lg-12">
+              <h2 class="text-pretitle" data-animate-el>Expertise</h2>
+
+              <ul class="skills-list h1" data-animate-el>
+                <li>Backend development</li>
+                <li>mobile apps</li>
+                <li>Elixir</li>
+                <li>Java</li>
+                <li>MERN</li>
+                <li>Database</li>
+                <li>Visualisation</li>
+              </ul>
+            </div>
+          </div>
+          <!-- end about-expertise -->
+
+          <div class="row about-skills" data-animate-block>
+            <div class="column lg-12">
+              <h2 class="text-pretitle" data-animate-el>Skills</h2>
+
+              <div class="skills-rotator" id="skillsRotator" data-animate-el>
+                <div class="skill-wrapper">
+                  <span
+                    class="skill-name"
+                    id="skillName"
+                    data-skills='["Elixir","Phoenix","OTP","GenServer","LiveView","PostgreSQL","Java","React Native","Node.js","React"]'
+                    aria-live="polite"
+                    >Elixir</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end about-skills -->
+
+          <div class="row about-timelines" data-animate-block>
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Experience</h2>
+
+              <div class="timeline" data-animate-el>
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">KageBytes</h4>
+                    <h5 class="timeline__meta">Software Engineer</h5>
+                    <p class="timeline__timeframe">January 2026 - Present</p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      At KageBytes, I work as a Software Engineer contributing
+                      to backend systems and scalable architecture. My
+                      responsibilities include API development, system design,
+                      and building reliable infrastructure that supports
+                      real-world product requirements. I collaborate closely
+                      with cross-functional teams to deliver high-quality
+                      software solutions.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">Regbits</h4>
+                    <h5 class="timeline__meta">Associate Software Engineer</h5>
+                    <p class="timeline__timeframe">
+                      December 2024 - January 2026
+                    </p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      At Regbits, I contributed to scalable fintech solutions as
+                      an Associate Software Engineer. Played a key role in
+                      developing and maintaining backend systems for projects
+                      like Bamboo Wallet and AMI — responsible for API
+                      development, database optimization, and seamless system
+                      integration across cross-functional teams.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end timeline -->
+            </div>
+            <!-- end column -->
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Education</h2>
+
+              <div class="timeline" data-animate-el>
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">FAST-NUCES</h4>
+                    <h5 class="timeline__meta">
+                      Bachelor's in Software Engineering
+                    </h5>
+                    <p class="timeline__timeframe">April 2024</p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      I pursued my Bachelor's in Software Engineering at FAST
+                      National University, Faisalabad, one of Pakistan’s top
+                      institutions for computer science and engineering. During
+                      my time there, I built a strong foundation in programming,
+                      databases, and software development methodologies. I
+                      actively participated in academic projects, tech
+                      societies, and internships that enriched my practical
+                      experience. The university environment fostered my passion
+                      for problem-solving and innovation.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">DataCamp</h4>
+                    <h5 class="timeline__meta">Professional Certifications</h5>
+                    <p class="timeline__timeframe">August 2024</p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      Completed certifications in Data Science, Python
+                      Programming, and Backend Development. Gained practical
+                      skills through interactive projects and real-world
+                      datasets, enhancing proficiency in data analysis, machine
+                      learning, and modern development practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end timeline -->
+            </div>
+            <!-- end column -->
+          </div>
+          <!-- end about-timelines -->
+        </section>
+        <!-- end s-about -->
+        <!-- ### works
+            ================================================== -->
+        <section id="works" class="s-works target-section">
+          <!-- Works Header -->
+          <div class="works-header row">
+            <div class="column lg-12" data-animate-block>
+              <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
+              <p class="h1 works-header__tagline" data-animate-el>
+                Here are some of my favorite projects I have done lately.
+              </p>
+            </div>
+          </div>
+
+          <!-- Scroll-snapped project showcase -->
+          <div class="project-showcase" id="projectShowcase">
+            <!-- Sticky counter -->
+            <div class="project-counter" id="projectCounter">
+              <span class="project-counter__current" id="counterCurrent"
+                >01</span
+              >
+              <span class="project-counter__sep">/</span>
+              <span class="project-counter__total">06</span>
+            </div>
+
+            <!-- Scroll hint arrows -->
+            <div class="project-scroll-hint" id="projectScrollHint">
+              <span>Scroll</span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 5v14M5 12l7 7 7-7"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+
+            <!-- Project 01 — Bamboo Wallet -->
+            <div class="project-card" data-index="1" id="project-01">
+              <div
+                class="project-card__bg"
+                style="
+                  background-image: url(&quot;images/portfolio/focustrack.png&quot;);
+                "
+              ></div>
+              <div class="project-card__overlay"></div>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span class="project-card__cat">Elixir / Fullstack</span>
+                </div>
+                <h2 class="project-card__title">Focus<br />Tracker</h2>
+                <p class="project-card__desc">
+                  A full-stack activity tracker built with Elixir/Phoenix and
+                  React Native. Features an OTP-supervised GenServer
+                  notification scheduler with persistent browser and mobile
+                  alerts, Phoenix LiveView dashboards, Google OAuth, Guardian
+                  JWT, PubSub and Channels.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://medium.com/@jawad.ul.hassan2001/i-built-a-focus-tracker-in-elixir-because-my-brain-wont-let-me-finish-anything-3f27fb601226?sharedUserId=jawad.ul.hassan2001"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card__link"
+                  >
+                    Read Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__thumbnail">
+                <img
+                  src="images/portfolio/gallery/focustrack.png"
+                  alt="Focus Tracker"
+                />
+              </div>
+            </div>
+
+            <!-- Project 02 — AMI -->
+            <div class="project-card" data-index="2" id="project-02">
+              <div
+                class="project-card__bg"
+                style="
+                  background-image: url(&quot;images/portfolio/ratelimiter.png&quot;);
+                "
+              ></div>
+              <div class="project-card__overlay"></div>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span class="project-card__cat">Elixir / Infrastructure</span>
+                </div>
+                <h2 class="project-card__title">Rate<br />Limiter Service</h2>
+                <p class="project-card__desc">
+                  A production-grade rate limiting service in pure Elixir
+                  implementing token-bucket and sliding-window algorithms. Uses
+                  one GenServer per user and ETS for microsecond reads, exposed
+                  as a plug usable in any Phoenix router.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://medium.com/@jawad.ul.hassan2001/building-a-pinterest-style-rate-limiter-in-elixir-sub-millisecond-rate-limiting-without-redis-f0999a5bd02b?sharedUserId=jawad.ul.hassan2001"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card__link"
+                  >
+                    Read Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__thumbnail">
+                <img
+                  src="images/portfolio/gallery/ratelimiter.png"
+                  alt="Rate Limiter Service"
+                />
+              </div>
+            </div>
+
+            <!-- Project 03 — Notifications Pipeline -->
+            <div class="project-card" data-index="3" id="project-03">
+              <div
+                class="project-card__bg"
+                style="
+                  background-image: url(&quot;images/portfolio/notificationpipelane.png&quot;);
+                "
+              ></div>
+              <div class="project-card__overlay"></div>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span class="project-card__cat">Elixir / Streaming</span>
+                </div>
+                <h2 class="project-card__title">
+                  Notifications<br />Fan-out Pipeline
+                </h2>
+                <p class="project-card__desc">
+                  A high-throughput notification delivery system using GenStage
+                  and Broadway with priority queues and back-pressure. Includes
+                  a LiveView dashboard for throughput and queue depth.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://medium.com/@jawad.ul.hassan2001/building-pinterests-notification-architecture-in-elixir-a-fan-out-pipeline-with-genstage-79a8f7fc7f17?sharedUserId=jawad.ul.hassan2001"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card__link"
+                  >
+                    Read Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__thumbnail">
+                <img
+                  src="images/portfolio/gallery/notifypipeline.png"
+                  alt="Notifications Fan-out Pipeline"
+                />
+              </div>
+            </div>
+
+            <!-- Project 04 — Distributed Cache -->
+            <div class="project-card" data-index="4" id="project-04">
+              <div
+                class="project-card__bg"
+                style="
+                  background-image: url(&quot;images/portfolio/distributedcache.png&quot;);
+                "
+              ></div>
+              <div class="project-card__overlay"></div>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span class="project-card__cat"
+                    >Elixir / Distributed Systems</span
+                  >
+                </div>
+                <h2 class="project-card__title">
+                  Distributed Key-Value<br />Cache
+                </h2>
+                <p class="project-card__desc">
+                  An in-memory distributed cache with TTL, LRU eviction and
+                  multi-node distribution using Horde and libcluster. Local ETS
+                  reads keep latency in microseconds while invalidation
+                  broadcasts across nodes.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://medium.com/@jawad.ul.hassan2001/building-a-distributed-key-value-cache-in-elixir-with-horde-libcluster-and-phoenix-liveview-7129ae2dacb0?sharedUserId=jawad.ul.hassan2001"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card__link"
+                  >
+                    Read Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__thumbnail">
+                <img
+                  src="images/portfolio/gallery/distributedcache.png"
+                  alt="Distributed Key-Value Cache"
+                />
+              </div>
+            </div>
+
+            <!-- Project 05 — Circuit Breaker -->
+            <div class="project-card" data-index="5" id="project-05">
+              <div
+                class="project-card__bg"
+                style="
+                  background-image: url(&quot;images/portfolio/circuitbreaker.png&quot;);
+                "
+              ></div>
+              <div class="project-card__overlay"></div>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span class="project-card__cat">Elixir / Resilience</span>
+                </div>
+                <h2 class="project-card__title">
+                  Circuit<br />Breaker Library
+                </h2>
+                <p class="project-card__desc">
+                  A fault-tolerance OTP library providing closed/open/half-open
+                  circuit state machines, DynamicSupervisor-managed workers,
+                  Telemetry events and optional fallback handlers for resilient
+                  services.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://medium.com/@jawad.ul.hassan2001/building-a-circuit-breaker-library-in-elixir-fault-tolerance-for-distributed-systems-b20c997d45e6?sharedUserId=jawad.ul.hassan2001"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card__link"
+                  >
+                    Read Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__thumbnail">
+                <img
+                  src="images/portfolio/gallery/circuitbreaker.png"
+                  alt="Circuit Breaker Library"
+                />
+              </div>
+            </div>
+
+            <!-- Project 06 — Absinthe GraphQL -->
+            <div class="project-card" data-index="6" id="project-06">
+              <div
+                class="project-card__bg"
+                style="
+                  background-image: url(&quot;images/portfolio/graphqlapi.png&quot;);
+                "
+              ></div>
+              <div class="project-card__overlay"></div>
+              <div class="project-card__content">
+                <div class="project-card__meta">
+                  <span class="project-card__cat">Elixir / GraphQL</span>
+                </div>
+                <h2 class="project-card__title">
+                  GraphQL API<br />with Absinthe
+                </h2>
+                <p class="project-card__desc">
+                  A Pinterest-inspired GraphQL API built with Absinthe: pins,
+                  boards, users and real-time subscriptions. Uses Dataloader
+                  batching, cursor pagination, and auth middleware.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="https://medium.com/@jawad.ul.hassan2001/building-a-pinterest-style-graphql-api-in-elixir-dataloader-subscriptions-and-the-n-1-problem-935bc4d8de1b?sharedUserId=jawad.ul.hassan2001"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-card__link"
+                  >
+                    Read Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__thumbnail">
+                <img
+                  src="images/portfolio/gallery/graphqlapi.png"
+                  alt="GraphQL API with Absinthe"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- end project-showcase -->
+
+          <!-- See All Projects CTA -->
+          <div class="row">
+            <div class="column lg-12">
+              <div class="works-cta-wrap" data-animate-block>
+                <a
+                  href="workshop.html"
+                  class="works-cta-btn"
+                  id="see-all-projects"
+                  data-animate-el
+                >
+                  <span>See All Projects</span>
+                  <span class="works-cta-btn__count">12+</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end s-works -->
+
+        <!-- ### contact
+            ================================================== -->
+        <section id="contact" class="s-contact target-section">
+          <div class="row contact-top">
+            <div class="column lg-12">
+              <h2 class="text-pretitle">Get In Touch</h2>
+
+              <p class="h1">
+                I love to hear from you. Whether you want to talk backend
+                architecture, Elixir, or have an opportunity in mind — shoot me
+                a message.
+              </p>
+            </div>
+          </div>
+          <!-- end contact-top -->
+
+          <div class="row contact-bottom">
+            <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+              <h3 class="text-pretitle">Reach me at</h3>
+              <p class="contact-links">
+                <a href="mailto:jawadulhassan2001@gmail.com" class="mailtoui"
+                  >Mail me</a
+                >
+                <br />
+                <a href="tel:+923270508243">text me </a>
+              </p>
+            </div>
+            <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+              <h3 class="text-pretitle">Social</h3>
+              <ul class="contact-social">
+                <li>
+                  <a href="https://medium.com/@jawad.ul.hassan2001">Medium</a>
+                </li>
+                <li>
+                  <a href="https://www.freelancer.com/u/jawadulhassann?sb=t"
+                    >Freelancer</a
+                  >
+                </li>
+                <li><a href="https://github.com/Jawad0936/">Github</a></li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jawad-ul-hassan-61407423b"
+                    >Linkedin</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.upwork.com/freelancers/~018d5eeb796c2535c9?mp_source=share"
+                    >Upwork</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="column lg-4 md-12 contact-block">
+              <a
+                href="mailto:jawad.ul.hassan2001@gmail.com"
+                class="mailtoui btn btn--medium u-fullwidth contact-btn"
+                >Say Hello.</a
+              >
+            </div>
+          </div>
+          <!-- end contact-bottom -->
+        </section>
+        <!-- end contact -->
+      </main>
+      <!-- end s-content -->
+
+      <!-- ## footer
+        ================================================== -->
+      <footer class="s-footer">
+        <div class="row">
+          <div class="column ss-copyright">
+            <span>© Copyright Jawad Ul Hassan 2025</span>
+            <span
+              >Design by
+              <a href="https://www.styleshout.com/">StyleShout</a> Distribution
+              By <a href="https://themewagon.com">Themewagon</a></span
+            >
+          </div>
+
+          <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- end s-footer -->
+    </div>
+    <!-- end -s-pagewrap -->
 
     <!-- Java Script
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
